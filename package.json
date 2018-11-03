@@ -4,12 +4,17 @@
   "description": "Trying to reproduce the infinite loop state in funfix library",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "lerna bootstrap",
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "build:watch": "lerna run --parallel build:watch"
   },
   "author": "lostintime.dev@gmail.com",
   "license": "Apache-2.0",
-  "dependencies": {},
   "devDependencies": {
-    "@lostintime/devcon-ts": "^0.1.6"
+    "@lostintime/devcon-ts": "0.1.6",
+    "lerna": "^3.4.3",
+    "rimraf": "2.6.2",
+    "typescript": "3.1.6"
   }
 }

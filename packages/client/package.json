@@ -1,0 +1,16 @@
+{
+  "name": "@lostintime/funfix-issue-client",
+  "version": "0.0.0",
+  "author": "lostintime <lostintime.dev@gmail.com>",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "build:watch": "tsc -w"
+  },
+  "dependencies": {
+    "funfix": "7.0.1"
+  }
+}
