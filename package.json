@@ -15,6 +15,7 @@
     "@lostintime/devcon-ts": "0.1.6",
     "lerna": "^3.4.3",
     "rimraf": "2.6.2",
+    "ts-node": "7.0.1",
     "typescript": "3.1.6"
   }
 }
