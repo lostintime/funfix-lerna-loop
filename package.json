@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "postinstall": "lerna bootstrap",
+    "start": "lerna run start",
     "clean": "lerna run clean",
     "build": "lerna run build",
     "build:watch": "lerna run --parallel build:watch"
