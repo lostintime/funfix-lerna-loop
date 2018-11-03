@@ -1,5 +1,5 @@
 
-import { IO } from "funfix"
+import { IO } from "funfix-effect"
 
 export function doSomeStuff(): IO<void> {
   return IO.unit()

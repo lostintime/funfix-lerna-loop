@@ -11,6 +11,6 @@
     "build:watch": "tsc -w"
   },
   "dependencies": {
-    "funfix": "7.0.1"
+    "funfix-effect": "7.0.1"
   }
 }
