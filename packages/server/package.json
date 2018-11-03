@@ -4,6 +4,7 @@
   "author": "lostintime <lostintime.dev@gmail.com>",
   "license": "Apache-2.0",
   "main": "lib/server.js",
+  "private": true,
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "npm run clean",

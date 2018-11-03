@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "author": "lostintime <lostintime.dev@gmail.com>",
   "license": "Apache-2.0",
+  "private": true,
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",

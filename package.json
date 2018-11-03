@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Trying to reproduce the infinite loop state in funfix library",
   "main": "dist/index.js",
+  "private": true,
   "scripts": {
     "postinstall": "lerna bootstrap",
     "start": "lerna run start",
