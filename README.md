@@ -1,10 +1,10 @@
 Funfix Infinite Loop with lerna
 ===============================
 
-In a [lerna](https://github.com/lerna/lerna/) setup project, when multiple packages depend on `funfix-effect` (`IO`), combining IO's from those packages leads to an infinite loop here: https://github.com/funfix/funfix/blob/master/packages/funfix-effect/src/io.ts#L2200.
+In a [lerna](https://github.com/lerna/lerna/) project setup, when multiple packages depend on `funfix-effect` (`IO`), combining IO's from those packages leads to an infinite loop here: https://github.com/funfix/funfix/blob/master/packages/funfix-effect/src/io.ts#L2200.
 This is caused by the fact that different lerna packages load different `funfix-core` module instances and different `Try` constructors so `instanceof` doesn't work.
 
-This can be worked around by using lerna's [hoisting](https://github.com/lerna/lerna/blob/master/doc/hoist.md) feature, so duplicate `funfix` packages will be moved to top level `node_modules` folder.
+This affects only development stage when packages are linked and can be worked around by using lerna's [hoisting](https://github.com/lerna/lerna/blob/master/doc/hoist.md) feature, so duplicate `funfix` packages will be moved to top level `node_modules` folder.
 
 ## Some ideas to settle this
 
@@ -20,7 +20,7 @@ This can be worked around by using lerna's [hoisting](https://github.com/lerna/l
 
 3. Add a warning note in [IO's](https://funfix.org/api/effect/classes/io.html) documentation to inform developers about potential issue
 
-Related issue: https://github.com/lerna/lerna/issues/1451
+Related issue: https://github.com/lerna/lerna/issues/1451 (hosting is not an option for thit guy)
 
 ## Installation
 
